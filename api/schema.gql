@@ -1,0 +1,25 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""user"""
+type UserModel {
+  id: ID!
+  email: String!
+  password: String!
+}
+
+type Query {
+  user(id: Float!): UserModel!
+  users: [UserModel!]!
+}
+
+type Mutation {
+  createUser(newUserInput: NewUserInput!): UserModel!
+  editUser(editUserInput: NewUserInput!): UserModel!
+}
+
+input NewUserInput {
+  email: String!
+  password: String!
+}
